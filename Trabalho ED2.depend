@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1475772189 source:c:\users\vitor\desktop\trabalho ed2\arraycreator.c
+	"ArrayCreator.h"
+
+1475768867 c:\users\vitor\desktop\trabalho ed2\arraycreator.h
+	<stdio.h>
+	<stdlib.h>
+
+1476061719 source:c:\users\vitor\desktop\trabalho ed2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ArrayCreator.h"
+	"Ordenacao.h"
+
+1476056521 c:\users\vitor\desktop\trabalho ed2\ordenacao.h
+	<stdio.h>
+	<stdlib.h>
+
+1476061496 source:c:\users\vitor\desktop\trabalho ed2\ordenacao.c
+	<time.h>
+	"Ordenacao.h"
+
