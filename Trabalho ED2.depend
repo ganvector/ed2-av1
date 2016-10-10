@@ -21,3 +21,25 @@
 	<time.h>
 	"Ordenacao.h"
 
+1476138578 source:/home/ganvector/ed2-av1/ArrayCreator.c
+	"ArrayCreator.h"
+
+1476138578 /home/ganvector/ed2-av1/ArrayCreator.h
+	<stdio.h>
+	<stdlib.h>
+
+1476138578 source:/home/ganvector/ed2-av1/Ordenacao.c
+	<time.h>
+	"Ordenacao.h"
+
+1476138578 /home/ganvector/ed2-av1/Ordenacao.h
+	<stdio.h>
+	<stdlib.h>
+
+1476139020 source:/home/ganvector/ed2-av1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ArrayCreator.h"
+	"Ordenacao.h"
+

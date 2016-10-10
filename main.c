@@ -3,27 +3,27 @@
 #include <time.h>
 #include "ArrayCreator.h"
 #include "Ordenacao.h"
-#define TAM 10 //o vetor tem que ser declarado com TAM+1, dentro das funções é chamado com TAM normalmente
+#define TAM 100000 //o vetor tem que ser declarado com TAM+1, dentro das funções é chamado com TAM normalmente
 
 int main()
 {
     clock_t start, end;
     int i;
     int vetor[TAM+1];
-    int vetor2[9] = {0, 12, 43, 1, 6, 56, 23, 52, 9};
     clock_t resultados[21];
 
     ordem_crescente(vetor, TAM);
     ordem_aleatoria(vetor, TAM);
+    printf("\t\tSELECT SORT\n");
+    SelectSort(vetor, TAM, resultados);
 
-    ShellSort(vetor2, 8);
-
+    ImprimirResultados(resultados);
+    ordem_aleatoria(vetor, TAM);
+    printf("\n\n\t\tINSERT SORT\n");
+    InsertSort(vetor, TAM, resultados);
     ImprimirResultados(resultados);
 
 
-
-    printf("\n\n%.2f, %.2f", (float)start, (float)end);
-    printf("\nTotal = %.2f", (float)(end - start)/CLOCKS_PER_SEC);
 }
 
 void MedirVetorCrescente(int *vet, int n){
