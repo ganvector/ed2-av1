@@ -21,6 +21,7 @@
 	<time.h>
 	"Ordenacao.h"
 
+<<<<<<< HEAD
 1476295841 source:c:\users\vitor\documents\github\ed2-av1\arraycreator.c
 	"ArrayCreator.h"
 
@@ -41,5 +42,27 @@
 
 1476294649 source:c:\users\vitor\documents\github\ed2-av1\ordenacao.c
 	<time.h>
+=======
+1476138578 source:/home/ganvector/ed2-av1/ArrayCreator.c
+	"ArrayCreator.h"
+
+1476138578 /home/ganvector/ed2-av1/ArrayCreator.h
+	<stdio.h>
+	<stdlib.h>
+
+1476138578 source:/home/ganvector/ed2-av1/Ordenacao.c
+	<time.h>
+	"Ordenacao.h"
+
+1476138578 /home/ganvector/ed2-av1/Ordenacao.h
+	<stdio.h>
+	<stdlib.h>
+
+1476139020 source:/home/ganvector/ed2-av1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ArrayCreator.h"
+>>>>>>> origin/master
 	"Ordenacao.h"
 
