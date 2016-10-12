@@ -1,14 +1,11 @@
 #include <time.h>
 #include "Ordenacao.h"
-#define CAP 5000
 
-void SelectSort(int *vet, int n, clock_t *resultados){
+void SelectSort(int *vet, int n){
     int i, j, min;
     int aux;
-    clock_t start, end;
 
-    start = clock();
-    for (i=1; i <= n - 1; i++, end = clock()){
+    for (i=1; i <= n - 1; i++){
         min = i;
         for (j = i + 1; j <= n; j++)
             if(vet[j] < vet[min])
@@ -16,20 +13,14 @@ void SelectSort(int *vet, int n, clock_t *resultados){
         aux = vet[min];
         vet[min] = vet[i];
         vet[i] = aux;
-        if(i%CAP == 0){
-            resultados[i/CAP] = end;
-        }
     }
-    resultados[(i+1)/CAP] = end = clock();
 }
 
-void InsertSort(int *vet, int n, clock_t *resultados){
+void InsertSort(int *vet, int n){
     int i, j;
     int aux;
-    clock_t start, end;
 
-    start = clock();
-    for(i=2; i<= n; i++, end = clock()){
+    for(i=2; i<= n; i++){
         aux = vet[i];
         j = i - 1;
         vet[0] = aux;
@@ -38,55 +29,43 @@ void InsertSort(int *vet, int n, clock_t *resultados){
             j--;
         }
         vet[j+1] = aux;
-        if(i%CAP == 0){
-            resultados[i/CAP] = end;
-        }
     }
-    resultados[(i+1)/CAP] = end;
 }
 
-void BubbleSort(int *vet, int n, clock_t *resultados){
+void BubbleSort(int *vet, int n){
     int i, j;
     int aux;
-    clock_t start, end;
 
-    start = clock();
-    for(i = n; i >= 2; i--, end = clock()){
+    for(i = n; i >= 2; i--){
         for (j = 2; j <= i; j++)
         if(vet[j] < vet[j-1]){
             aux = vet[j];
             vet[j] = vet[j-1];
             vet[j-1] = aux;
         }
-        if(i%CAP == 0){
-            resultados[i/CAP] = end;
-        }
     }
-    resultados[(i+1)/CAP] = end;
 }
 
-void MergeSort(int *vet, int n, clock_t *resultados){
-    MSort(1, n, vet, resultados);
+void MergeSort(int *vet, int n){
+    MSort(1, n, vet);
 }
 
-void MSort(int ini, int fim, int *vet, clock_t *resultados){
+void MSort(int ini, int fim, int *vet){
     int i, j, k, meio;
     int *aux;
 
     if (ini<fim){
         meio = (ini + fim) / 2;
-        MSort(ini, meio, vet, resultados);
-        MSort(meio + 1, fim, vet, resultados);
-        Merge(vet, ini, meio, fim, resultados);
+        MSort(ini, meio, vet);
+        MSort(meio + 1, fim, vet);
+        Merge(vet, ini, meio, fim);
     }
 }
 
-void Merge(int *vet, int ini, int meio, int fim, clock_t *resultados){
+void Merge(int *vet, int ini, int meio, int fim){
     int i = ini, j = meio + 1, k = 0;
-    clock_t start, end;
     int *aux = (int*)malloc(sizeof(int)*(fim-ini + 1));
 
-    start = clock();
     while ((i < meio + 1)||(j < fim + 1)){
         if(i == meio + 1){
             aux[k] = vet[j];

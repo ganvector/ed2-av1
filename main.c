@@ -3,27 +3,35 @@
 #include <time.h>
 #include "ArrayCreator.h"
 #include "Ordenacao.h"
-#define TAM 10 //o vetor tem que ser declarado com TAM+1, dentro das funções é chamado com TAM normalmente
+#define TAM 5000 //o vetor tem que ser declarado com TAM+1, dentro das funções é chamado com TAM normalmente
 
 int main()
 {
-    clock_t start, end;
+    int *vetor;
     int i;
-    int vetor[TAM+1];
-    int vetor2[9] = {0, 12, 43, 1, 6, 56, 23, 52, 9};
-    clock_t resultados[21];
+    clock_t start, end;
+    /*printf("\t\t---SELECTSORT---\n");
+    for (i=1;i<=20;i++){
+        vetor = (int*)malloc((i*TAM+1)*sizeof(int));
+        ordem_crescente(vetor, i*TAM);
+        start = clock();
+        SelectSort(vetor, i*TAM);
+        end = clock();
+        printf("O tempo com %d valores foi -> %f segundos\n", i*TAM, (float)(end-start)/CLOCKS_PER_SEC);
+        free(vetor);
+    }*/
 
-    ordem_crescente(vetor, TAM);
-    ordem_aleatoria(vetor, TAM);
-
-    ShellSort(vetor2, 8);
-
-    ImprimirResultados(resultados);
-
-
-
-    printf("\n\n%.2f, %.2f", (float)start, (float)end);
-    printf("\nTotal = %.2f", (float)(end - start)/CLOCKS_PER_SEC);
+    printf("\t\t---INSERTSORT---\n");
+    for(i=1;i<=20;i++){
+        vetor = malloc((i*TAM+1)*sizeof(int));
+        ordem_aleatoria(vetor, i*TAM);
+        start = clock();
+        InsertSort(vetor, i*TAM);
+        end = clock();
+        printf("O tempo com %d valores foi -> %.3f segundos\n", i*TAM, (float)(end-start)/CLOCKS_PER_SEC);
+        free(vetor);
+    }
+    return 0;
 }
 
 void MedirVetorCrescente(int *vet, int n){

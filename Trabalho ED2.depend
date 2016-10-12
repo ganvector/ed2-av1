@@ -21,3 +21,25 @@
 	<time.h>
 	"Ordenacao.h"
 
+1476295841 source:c:\users\vitor\documents\github\ed2-av1\arraycreator.c
+	"ArrayCreator.h"
+
+1475768867 c:\users\vitor\documents\github\ed2-av1\arraycreator.h
+	<stdio.h>
+	<stdlib.h>
+
+1476061719 source:c:\users\vitor\documents\github\ed2-av1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ArrayCreator.h"
+	"Ordenacao.h"
+
+1476293925 c:\users\vitor\documents\github\ed2-av1\ordenacao.h
+	<stdio.h>
+	<stdlib.h>
+
+1476294649 source:c:\users\vitor\documents\github\ed2-av1\ordenacao.c
+	<time.h>
+	"Ordenacao.h"
+

@@ -23,7 +23,7 @@ void trocar(int *a, int *b){
 void ordem_aleatoria(int *vet, int tamanho){
     int i, j;
     srand((unsigned)time(NULL));
-
+    ordem_crescente(vet, tamanho);
     for (i = tamanho; i > 0; i--){
         int j = 1 + (rand() % (i + 1));
 

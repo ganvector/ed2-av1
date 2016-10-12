@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 //simples
-void SelectSort(int *, int, clock_t*);
-void InsertSort(int *, int, clock_t*);
-void BubbleSort(int *, int, clock_t*);
+void SelectSort(int *, int);
+void InsertSort(int *, int);
+void BubbleSort(int *, int);
 //complexos
-void MergeSort(int*, int, clock_t*);
-void MSort(int, int, int*, clock_t*);
-void Merge(int*, int, int, int, clock_t*);
+void MergeSort(int*, int);
+void MSort(int, int, int*);
+void Merge(int*, int, int, int);
 
 void ShellSort(int *, int);
 
