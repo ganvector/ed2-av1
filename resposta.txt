@@ -1,0 +1,66 @@
+--METODO DE SELECAO--
+	Ordem Crescente:
+		O tempo com   5000 valores foi -> 0.075 segundos
+		O tempo com  10000 valores foi -> 0.224 segundos
+		O tempo com  15000 valores foi -> 0.495 segundos
+		O tempo com  20000 valores foi -> 0.895 segundos
+		O tempo com  25000 valores foi -> 1.374 segundos
+		O tempo com  30000 valores foi -> 2.028 segundos
+		O tempo com  35000 valores foi -> 2.780 segundos
+		O tempo com  40000 valores foi -> 3.617 segundos
+		O tempo com  45000 valores foi -> 4.681 segundos
+		O tempo com  50000 valores foi -> 5.802 segundos
+		O tempo com  55000 valores foi -> 6.905 segundos
+		O tempo com  60000 valores foi -> 8.582 segundos
+		O tempo com  65000 valores foi -> 9.972 segundos
+		O tempo com  70000 valores foi -> 11.640 segundos
+		O tempo com  75000 valores foi -> 13.232 segundos
+		O tempo com  80000 valores foi -> 15.344 segundos
+		O tempo com  85000 valores foi -> 17.539 segundos
+		O tempo com  90000 valores foi -> 19.209 segundos
+		O tempo com  95000 valores foi -> 21.417 segundos
+		O tempo com 100000 valores foi -> 23.790 segundos
+
+	Ordem Decrescente:
+		O tempo com   5000 valores foi -> 0.064 segundos
+		O tempo com  10000 valores foi -> 0.242 segundos
+		O tempo com  15000 valores foi -> 0.566 segundos
+		O tempo com  20000 valores foi -> 0.975 segundos
+		O tempo com  25000 valores foi -> 1.577 segundos
+		O tempo com  30000 valores foi -> 2.182 segundos
+		O tempo com  35000 valores foi -> 3.032 segundos
+		O tempo com  40000 valores foi -> 4.050 segundos
+		O tempo com  45000 valores foi -> 5.068 segundos
+		O tempo com  50000 valores foi -> 6.298 segundos
+		O tempo com  55000 valores foi -> 7.467 segundos
+		O tempo com  60000 valores foi -> 9.073 segundos
+		O tempo com  65000 valores foi -> 10.628 segundos
+		O tempo com  70000 valores foi -> 12.072 segundos
+		O tempo com  75000 valores foi -> 13.929 segundos
+		O tempo com  80000 valores foi -> 15.878 segundos
+		O tempo com  85000 valores foi -> 18.071 segundos
+		O tempo com  90000 valores foi -> 20.084 segundos
+		O tempo com  95000 valores foi -> 22.632 segundos
+		O tempo com 100000 valores foi -> 24.911 segundos
+
+	Ordem Aleatoria:
+		O tempo com   5000 valores foi -> 0.061 segundos
+		O tempo com  10000 valores foi -> 0.242 segundos
+		O tempo com  15000 valores foi -> 0.527 segundos
+		O tempo com  20000 valores foi -> 0.951 segundos
+		O tempo com  25000 valores foi -> 1.485 segundos
+		O tempo com  30000 valores foi -> 2.144 segundos
+		O tempo com  35000 valores foi -> 2.940 segundos
+		O tempo com  40000 valores foi -> 3.844 segundos
+		O tempo com  45000 valores foi -> 4.816 segundos
+		O tempo com  50000 valores foi -> 5.953 segundos
+		O tempo com  55000 valores foi -> 7.178 segundos
+		O tempo com  60000 valores foi -> 8.583 segundos
+		O tempo com  65000 valores foi -> 10.029 segundos
+		O tempo com  70000 valores foi -> 11.657 segundos
+		O tempo com  75000 valores foi -> 13.443 segundos
+		O tempo com  80000 valores foi -> 15.203 segundos
+		O tempo com  85000 valores foi -> 17.270 segundos
+		O tempo com  90000 valores foi -> 19.328 segundos
+		O tempo com  95000 valores foi -> 21.355 segundos
+		O tempo com 100000 valores foi -> 23.882 segundos
