@@ -13,7 +13,6 @@ int main()
 {
     int *vetor;
     int i;
-<<<<<<< HEAD
     clock_t start, end;
     /*printf("\t\t---SELECTSORT---\n");
     for (i=1;i<=20;i++){
@@ -37,23 +36,7 @@ int main()
         free(vetor);
     }
     return 0;
-=======
-    int vetor[TAM+1];
-    clock_t resultados[21];
 
-    ordem_crescente(vetor, TAM);
-    ordem_aleatoria(vetor, TAM);
-    printf("\t\tSELECT SORT\n");
-    SelectSort(vetor, TAM, resultados);
-
-    ImprimirResultados(resultados);
-    ordem_aleatoria(vetor, TAM);
-    printf("\n\n\t\tINSERT SORT\n");
-    InsertSort(vetor, TAM, resultados);
-    ImprimirResultados(resultados);
-
-
->>>>>>> origin/master
 }
 
 void MedirVetorCrescente(int *vet, int n){
